@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Customer from "./Customer";
+import Address from "./Address";
 import Vehicle from "./Vehicle";
 
 class App extends Component {
@@ -20,7 +22,11 @@ class App extends Component {
           >
             Learn React TEST
           </a>
+          <Customer />
+
           <Vehicle />
+
+          <Address />
         </header>
       </div>
     );
