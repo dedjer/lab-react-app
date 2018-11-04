@@ -3,6 +3,7 @@
 //imrc
 import React from "react";
 import axios from "axios";
+import { Table } from "reactstrap";
 import Address from "./Address";
 
 //ccc
@@ -27,14 +28,21 @@ export default class Customer extends React.Component {
     console.log({ customers });
     /* Pass json state object to child component */
     return (
-      <React.Fragment>
-        <ul>
+      <Table striped>
+        <thead>
+          <tr>
+            <th>Full Name</th>
+          </tr>
+        </thead>
+        <tbody>
           {this.state.customers.map(c => (
-            <li key={c.id}>{c.name}</li>
+            <tr>
+              <td>{c.name}</td>
+            </tr>
           ))}
-        </ul>
+        </tbody>
         <Address addresses={this.state.customers.addresses} />
-      </React.Fragment>
+      </Table>
     );
   }
 }
