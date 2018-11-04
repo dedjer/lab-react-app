@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Customer from "./Customer";
-import Address from "./Address";
 import Vehicle from "./Vehicle";
 
 class App extends Component {
@@ -25,8 +24,6 @@ class App extends Component {
           <Customer />
 
           <Vehicle />
-
-          <Address />
         </header>
       </div>
     );

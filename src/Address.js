@@ -22,6 +22,10 @@ export default class Address extends React.Component {
   }
 
   render() {
+    // Get addresses from parent via props object destructuring
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring
+    const { addresses } = this.props;
+    console.log({ addresses });
     return (
       <ul>
         {this.state.addresses.map(a => (

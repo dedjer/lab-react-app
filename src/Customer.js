@@ -3,6 +3,7 @@
 //imrc
 import React from "react";
 import axios from "axios";
+import Address from "./Address";
 
 //ccc
 export default class Customer extends React.Component {
@@ -22,12 +23,18 @@ export default class Customer extends React.Component {
   }
 
   render() {
+    const { customers } = this.state;
+    console.log({ customers });
+    /* Pass json state object to child component */
     return (
-      <ul>
-        {this.state.customers.map(c => (
-          <li key={c.id}>{c.name}</li>
-        ))}
-      </ul>
+      <React.Fragment>
+        <ul>
+          {this.state.customers.map(c => (
+            <li key={c.id}>{c.name}</li>
+          ))}
+        </ul>
+        <Address addresses={this.state.customers.addresses} />
+      </React.Fragment>
     );
   }
 }
