@@ -22,11 +22,19 @@ export default class Vehicle extends Component {
   }
   render() {
     return (
-      <ul>
-        {this.state.vehicles.map(v => (
-          <li key={v.id}>{v.make}</li>
-        ))}
-      </ul>
+      <Table striped>
+        <thead>
+          <tr>
+            <th>Make</th>
+            <th>Model</th>
+          </tr>
+        </thead>
+        <tbody>
+          {this.state.vehicles.map(v => (
+            <li key={v.id}>{v.make}</li>
+          ))}
+        </tbody>
+      </Table>
     );
   }
 }
