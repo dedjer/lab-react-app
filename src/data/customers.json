@@ -1,0 +1,132 @@
+{
+	"_embedded": {
+		"customers": [
+			{
+				"name": "Ronnie",
+				"id": 1,
+				"_links": {
+					"self": {
+						"href": "http://localhost:8080/customers/1"
+					},
+					"customer": {
+						"href": "http://localhost:8080/customers/1"
+					},
+					"addresses": {
+						"href": "http://localhost:8080/customers/1/addresses"
+					},
+					"vehicles": {
+						"href": "http://localhost:8080/customers/1/vehicles"
+					}
+				}
+			},
+			{
+				"name": "Bobby",
+				"id": 2,
+				"_links": {
+					"self": {
+						"href": "http://localhost:8080/customers/2"
+					},
+					"customer": {
+						"href": "http://localhost:8080/customers/2"
+					},
+					"addresses": {
+						"href": "http://localhost:8080/customers/2/addresses"
+					},
+					"vehicles": {
+						"href": "http://localhost:8080/customers/2/vehicles"
+					}
+				}
+			},
+			{
+				"name": "Ricky",
+				"id": 3,
+				"_links": {
+					"self": {
+						"href": "http://localhost:8080/customers/3"
+					},
+					"customer": {
+						"href": "http://localhost:8080/customers/3"
+					},
+					"addresses": {
+						"href": "http://localhost:8080/customers/3/addresses"
+					},
+					"vehicles": {
+						"href": "http://localhost:8080/customers/3/vehicles"
+					}
+				}
+			},
+			{
+				"name": "Mike",
+				"id": 4,
+				"_links": {
+					"self": {
+						"href": "http://localhost:8080/customers/4"
+					},
+					"customer": {
+						"href": "http://localhost:8080/customers/4"
+					},
+					"addresses": {
+						"href": "http://localhost:8080/customers/4/addresses"
+					},
+					"vehicles": {
+						"href": "http://localhost:8080/customers/4/vehicles"
+					}
+				}
+			},
+			{
+				"name": "Ralph",
+				"id": 5,
+				"_links": {
+					"self": {
+						"href": "http://localhost:8080/customers/5"
+					},
+					"customer": {
+						"href": "http://localhost:8080/customers/5"
+					},
+					"addresses": {
+						"href": "http://localhost:8080/customers/5/addresses"
+					},
+					"vehicles": {
+						"href": "http://localhost:8080/customers/5/vehicles"
+					}
+				}
+			},
+			{
+				"name": "Johnny",
+				"id": 6,
+				"_links": {
+					"self": {
+						"href": "http://localhost:8080/customers/6"
+					},
+					"customer": {
+						"href": "http://localhost:8080/customers/6"
+					},
+					"addresses": {
+						"href": "http://localhost:8080/customers/6/addresses"
+					},
+					"vehicles": {
+						"href": "http://localhost:8080/customers/6/vehicles"
+					}
+				}
+			}
+		]
+	},
+	"_links": {
+		"self": {
+			"href": "http://localhost:8080/customers{?page,size,sort}",
+			"templated": true
+		},
+		"profile": {
+			"href": "http://localhost:8080/profile/customers"
+		},
+		"search": {
+			"href": "http://localhost:8080/customers/search"
+		}
+	},
+	"page": {
+		"size": 20,
+		"totalElements": 6,
+		"totalPages": 1,
+		"number": 0
+	}
+}

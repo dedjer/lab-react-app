@@ -37,7 +37,7 @@ class Parent extends React.Component {
 
 	render() {
 		return (
-			<Jumbotron>
+			<Jumbotron align="left">
 				<Child color={this.state.color} action={this.handler} />
 			</Jumbotron>
 		);

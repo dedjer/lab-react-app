@@ -1,0 +1,58 @@
+{
+	"_embedded": {
+		"vehicles": [
+			{
+				"year": "2015",
+				"make": "Nissan",
+				"model": "Altima",
+				"id": 1,
+				"_links": {
+					"self": { "href": "http://localhost:8080/vehicles/1" },
+					"vehicle": { "href": "http://localhost:8080/vehicles/1" },
+					"customers": { "href": "http://localhost:8080/vehicles/1/customers" }
+				}
+			},
+			{
+				"year": "2015",
+				"make": "Subaru",
+				"model": "Outback",
+				"id": 2,
+				"_links": {
+					"self": { "href": "http://localhost:8080/vehicles/2" },
+					"vehicle": { "href": "http://localhost:8080/vehicles/2" },
+					"customers": { "href": "http://localhost:8080/vehicles/2/customers" }
+				}
+			},
+			{
+				"year": "2005",
+				"make": "Yamaha",
+				"model": "Warrior",
+				"id": 3,
+				"_links": {
+					"self": { "href": "http://localhost:8080/vehicles/3" },
+					"vehicle": { "href": "http://localhost:8080/vehicles/3" },
+					"customers": { "href": "http://localhost:8080/vehicles/3/customers" }
+				}
+			},
+			{
+				"year": "2006",
+				"make": "Honda",
+				"model": "Accord",
+				"id": 4,
+				"_links": {
+					"self": { "href": "http://localhost:8080/vehicles/4" },
+					"vehicle": { "href": "http://localhost:8080/vehicles/4" },
+					"customers": { "href": "http://localhost:8080/vehicles/4/customers" }
+				}
+			}
+		]
+	},
+	"_links": {
+		"self": {
+			"href": "http://localhost:8080/vehicles{?page,size,sort}",
+			"templated": true
+		},
+		"profile": { "href": "http://localhost:8080/profile/vehicles" }
+	},
+	"page": { "size": 20, "totalElements": 4, "totalPages": 1, "number": 0 }
+}

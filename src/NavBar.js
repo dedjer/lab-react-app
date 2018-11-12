@@ -42,6 +42,16 @@ export default class NavBar extends React.Component {
 								</LinkContainer>
 							</NavItem>
 							<NavItem>
+								<LinkContainer to="/Customer">
+									<NavLink>Customer</NavLink>
+								</LinkContainer>
+							</NavItem>
+							<NavItem>
+								<LinkContainer to="/Vehicle">
+									<NavLink>Vehicle</NavLink>
+								</LinkContainer>
+							</NavItem>
+							<NavItem>
 								<LinkContainer to="/Parent">
 									<NavLink>Parent</NavLink>
 								</LinkContainer>
