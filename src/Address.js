@@ -10,6 +10,7 @@ export default class Address extends React.Component {
     super(props);
     this.state = { addresses: [] };
   }
+  // here we use an external method to get rest data
   componentDidMount() {
     api
       .get(`addresses`)
